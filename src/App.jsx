@@ -396,7 +396,7 @@ function AuthScreen({ onAuth }){
         <span style={{color:PINK,cursor:'pointer'}} onClick={async()=>{
           if(!form.email){alert('Digite seu e-mail primeiro.');return}
           const {error}=await supabase.auth.resetPasswordForEmail(form.email,{
-            redirectTo:'https://orkut-revival-app.vercel.app/reset-password.html'
+            redirectTo:'https://orgute.org/reset-password.html'
           })
           if(error) alert('Erro: '+error.message)
           else alert('E-mail de redefinição enviado! Verifique sua caixa de entrada.')
